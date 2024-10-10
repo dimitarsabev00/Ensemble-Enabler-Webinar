@@ -1,3 +1,74 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Font Faces */
 @font-face {
   font-family: "Sentient-Light";
   src: url("./assets/fonts/Sentient-Light.otf") format("opentype");
@@ -32,6 +103,7 @@
   font-style: italic;
 }
 
+/* General Styles */
 * {
   color: #fff;
   margin: 0;
@@ -133,13 +205,13 @@ header {
   }
 }
 
+/* Section 2 */
 .section-2 {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #1d5a3a;
   width: 100%;
-  height: 239px;
   padding: 40px 116px;
 
   h2 {
@@ -166,7 +238,6 @@ header {
 .section-3 {
   display: flex;
   align-items: center;
-  height: 816px;
   background-color: #fbf4ee;
   border-bottom: 15px solid #41b729;
 
@@ -272,10 +343,11 @@ header {
       font-size: 18px;
       border-radius: 30px;
       display: flex;
+      justify-content: space-between;
       gap: 10px;
       font-family: "GeneralSans-Medium";
       margin-bottom: 82px;
-      width: 190px;
+      width: 260px;
       &:hover {
         background-color: #67c554;
       }
@@ -308,6 +380,112 @@ header {
             line-height: 1.5;
             text-align: left;
             width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Section 5 */
+.section-5 {
+  background-color: #fbf4ee;
+  border-bottom: 15px solid #41b729;
+  position: relative;
+  padding: 100px 116px;
+
+  .background-color-container {
+    .background-image-container {
+      position: absolute;
+      right: -4%;
+      top: 168px;
+      width: 375px;
+      height: 540px;
+      background-image: url("./assets/icons/section5-logo-element-background.svg");
+      background-size: cover;
+      background-position: center;
+    }
+    .section5-book-mockup {
+      position: absolute;
+      right: 178px;
+      top: 100px;
+    }
+    .section-5-content {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .left-content {
+        h2 {
+          font-family: "Sentient-Light";
+          font-size: 64px;
+          color: #084c2b;
+          line-height: 1.2;
+          margin-bottom: 40px;
+          width: 30%;
+        }
+
+        .profile {
+          display: flex;
+          align-items: center;
+          background-color: white;
+          width: 615px;
+          height: 200px;
+          padding: 20px 20px;
+          border-left: 5px solid #47ad38;
+
+          img {
+            width: 166px;
+            height: 166px;
+            border-radius: 50%;
+            border-top-left-radius: 80%;
+            margin-right: 20px;
+          }
+
+          .profile-info {
+            h3 {
+              font-family: "Sentient-Light";
+              font-size: 32px;
+              color: #084c2b;
+              margin: 0;
+              width: 70%;
+            }
+
+            p {
+              font-family: "GeneralSans-Medium";
+              font-size: 20px;
+              color: #084c2b;
+              width: 70%;
+            }
+          }
+        }
+
+        .profile-description {
+          font-family: "GeneralSans-Medium";
+          font-size: 20px;
+          color: #084c2b;
+          margin: 40px 0;
+        }
+
+        .cta-button {
+          background-color: #47ad38;
+          color: #fff;
+          padding: 15px 34px;
+          text-decoration: none;
+          font-size: 18px;
+          border-radius: 30px;
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          font-family: "GeneralSans-Medium";
+
+          &:hover {
+            background-color: #67c554;
+          }
+
+          img {
+            width: 20px;
+            height: 20px;
           }
         }
       }
