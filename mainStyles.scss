@@ -8,6 +8,7 @@
   border: 0;
   outline: 0;
   vertical-align: baseline;
+  overflow-x: hidden;
 }
 
 html,
@@ -69,6 +70,7 @@ video {
 }
 
 /* Font Faces */
+
 @font-face {
   font-family: "Sentient-Light";
   src: url("./assets/fonts/Sentient-Light.otf") format("opentype");
@@ -104,6 +106,7 @@ video {
 }
 
 /* General Styles */
+
 * {
   color: #fff;
   margin: 0;
@@ -123,6 +126,7 @@ header {
 }
 
 /* Section 1 */
+
 .section-1 {
   display: flex;
   align-items: center;
@@ -206,6 +210,7 @@ header {
 }
 
 /* Section 2 */
+
 .section-2 {
   display: flex;
   justify-content: center;
@@ -235,6 +240,7 @@ header {
 }
 
 /* Section 3 */
+
 .section-3 {
   display: flex;
   align-items: center;
@@ -252,13 +258,11 @@ header {
       background-size: cover;
       background-position: center;
       display: flex;
+      padding: 100px 116px;
     }
   }
 
   .section-3-content-left {
-    padding-top: 138px;
-    padding-left: 116px;
-
     h2 {
       font-size: 52px;
       font-family: "Sentient-Light";
@@ -289,9 +293,6 @@ header {
   }
 
   .section-3-content-right {
-    padding-right: 116px;
-    padding-top: 100px;
-
     h3 {
       font-size: 28px;
       font-family: "GeneralSans-SemiBold";
@@ -310,7 +311,7 @@ header {
         font-family: "GeneralSans-Medium";
         font-size: 24px;
         color: #173f28;
-        width: 60%;
+        width: 78%;
 
         img {
           margin-right: 30px;
@@ -321,11 +322,11 @@ header {
 }
 
 /* Section 4 */
+
 .section-4 {
   padding: 60px 116px;
   background-color: #fff;
   .section-4-content {
-    margin: 0 116px;
     h2 {
       font-family: "Sentient-Light";
       font-size: 42px;
@@ -358,7 +359,6 @@ header {
         gap: 52px;
         .column {
           width: 400px;
-          height: 490px;
           img {
             width: 100%;
             border-radius: 8px;
@@ -388,6 +388,7 @@ header {
 }
 
 /* Section 5 */
+
 .section-5 {
   background-color: #fbf4ee;
   border-bottom: 15px solid #41b729;
@@ -487,6 +488,222 @@ header {
             width: 20px;
             height: 20px;
           }
+        }
+      }
+    }
+  }
+}
+
+/* Section 6 */
+
+.section-6 {
+  display: flex;
+  align-items: center;
+  background-color: #fbf4ee;
+
+  .background-color-container {
+    width: 100%;
+    height: 100%;
+
+    .background-image-container {
+      width: 100%;
+      height: 100%;
+      background-image: url("./assets/icons/section1-transperant-element.svg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 100px 116px;
+
+      .section-6-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .left-content {
+          width: 40%;
+          .course-image {
+            width: 100%;
+            border-radius: 8px;
+          }
+        }
+
+        .right-content {
+          width: 55%;
+          padding-left: 40px;
+
+          .course-tag {
+            font-family: "GeneralSans-SemiBold";
+            font-size: 18px;
+            color: #41b729;
+            margin-bottom: 15px;
+          }
+
+          h2 {
+            font-family: "Sentient-Light";
+            font-size: 64px;
+            color: #173f28;
+            margin-bottom: 50px;
+            width: 60%;
+          }
+
+          .course-description {
+            font-family: "GeneralSans-Medium";
+            font-size: 24px;
+            color: #173f28;
+            margin-bottom: 23px;
+          }
+
+          .course-benefits {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+
+            li {
+              font-family: "GeneralSans-Medium";
+              font-size: 18px;
+              color: #173f28;
+              margin-bottom: 30px;
+              display: flex;
+              align-items: center;
+
+              img {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+              }
+              span {
+                font-family: "GeneralSans-SemiBold";
+                margin-right: 15px;
+                color: #173f28;
+              }
+            }
+          }
+
+          .final-description {
+            font-family: "Sentient-Light";
+            font-size: 32px;
+            color: #084c2b;
+            margin-bottom: 20px;
+            width: 50%;
+          }
+
+          .cta-button {
+            background-color: #47ad38;
+            color: #fff;
+            padding: 15px 34px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: "GeneralSans-Medium";
+
+            &:hover {
+              background-color: #67c554;
+            }
+
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Footer
+
+footer {
+  background-color: #084c2b;
+  padding: 75px 116px;
+  color: white;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 30px;
+    border-bottom: 5px solid #41b729;
+  }
+
+  .footer-links,
+  .footer-contact {
+    h3 {
+      font-family: "Sentient-Light";
+      font-size: 30px;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 15px;
+
+        a {
+          font-family: "GeneralSans-Medium";
+          font-size: 16px;
+          color: #fff;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-contact {
+    p {
+      font-family: "GeneralSans-Medium";
+      font-size: 18px;
+      color: #fff;
+      margin-bottom: 10px;
+      a {
+        font-family: "GeneralSans-Medium";
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+
+    p {
+      font-family: "GeneralSans-Regular";
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      gap: 20px;
+
+      a {
+        font-family: "GeneralSans-Medium";
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
