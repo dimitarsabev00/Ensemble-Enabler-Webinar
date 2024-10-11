@@ -33,9 +33,9 @@ const InnovationScreen = () => {
         <div className="background-color-container">
           <div className="background-image-container">
             <div className="section-1-content-left">
-              <h2>
+              <h1>
                 Meaningful connections spark ideas for successful innovation
-              </h2>
+              </h1>
               <div className="description-in-section-2">
                 <p>
                   Network Leadership unleashes the potential of your
