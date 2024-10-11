@@ -1,7 +1,14 @@
 import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import { Routes } from "./components";
 
 const App = () => {
-  return <h1>Ensemble-Enabler-Webinar</h1>;
+  return (
+    <Router>
+      <Routes />
+    </Router>
+  );
 };
 
 export default App;
