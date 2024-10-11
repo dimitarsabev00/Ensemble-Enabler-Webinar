@@ -1,0 +1,38 @@
+/* Make Colors Variables */
+// $black-color: #021019;
+
+/* Font Faces */
+
+@font-face {
+  font-family: "Sentient-Light";
+  src: url("./assets/fonts/Sentient-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sentient-SemiBold";
+  src: url("./assets/fonts/Sentient-Semibold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeneralSans-Medium";
+  src: url("./assets/icons/GeneralSans-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sentient-Regular";
+  src: url("./assets/icons/Sentient-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sentient-Italic";
+  src: url("./Sentient-Italic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
