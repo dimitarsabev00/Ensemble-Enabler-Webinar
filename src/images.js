@@ -14,6 +14,13 @@ import section6IllustrationPng from './assets/images/section6-illustration.png';
 import playIcon from './assets/images/play-icon.svg';
 import arrowRight from './assets/images/arrow-right-icon.svg';
 import webinarImg from './assets/images/webinar-img.png';
+import linkedInIcon from './assets/images/LinkedIn.svg';
+import closeIcon from './assets/images/x.svg';
+
+import performanceIcon1Svg from './assets/images/performance-icon-1.svg';
+import performanceIcon2Svg from './assets/images/performance-icon-2.svg';
+import performanceIcon3Svg from './assets/images/performance-icon-3.svg';
+import performanceIcon4Svg from './assets/images/performance-icon-4.svg';
 
 
 const images = {
@@ -32,7 +39,14 @@ const images = {
   section6IllustrationPng,
   playIcon,
   arrowRight,
-  webinarImg
+  webinarImg,
+  linkedInIcon,
+  closeIcon,
+  performanceIcon1Svg,
+  performanceIcon2Svg,
+  performanceIcon3Svg,
+  performanceIcon4Svg
+  
 };
 
 export default images;

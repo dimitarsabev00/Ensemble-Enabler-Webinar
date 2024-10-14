@@ -10,11 +10,16 @@ footer {
     justify-content: space-between;
     align-items: start;
     padding-bottom: 80px;
-    border-bottom: 2px solid #41b729;
+    border-bottom: 2px solid $mainlightgreen;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+      gap: 30px;
+    }
 
     .footer-logo {
       img {
-        max-width: 300px;
+        max-width: 80%;
       }
     }
   }
@@ -40,9 +45,11 @@ footer {
           font-size: 1.1rem;
           color: $white;
           text-decoration: none;
+          transition: all 0.3s ease-in-out;
+          font-weight: 500;
 
           &:hover {
-            text-decoration: underline;
+            color: $mainlightgreen;
           }
         }
       }
@@ -51,18 +58,18 @@ footer {
 
   .footer-contact {
     p {
-      font-family: GeneralSans, sans-serif;
-      font-size: 1.1rem;
-      color: $white;
+
       margin-bottom: 15px;
       a {
         font-family: GeneralSans, sans-serif;
         font-size: 1.1rem;
         color: $white;
         text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        font-weight: 500;
 
         &:hover {
-          text-decoration: underline;
+          color: $mainlightgreen;
         }
       }
     }
@@ -74,10 +81,16 @@ footer {
     align-items: center;
     padding-top: 30px;
 
+    @media (max-width: 800px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+
     p {
-      
-      font-size: 1rem;
+      font-size: 0.9rem;
       color: $white;
+      font-weight: 500;
     }
 
     .footer-bottom-links {
@@ -85,13 +98,15 @@ footer {
       gap: 20px;
 
       a {
-       
-        font-size: 1rem;
+        font-size: 0.9rem;
         color: $white;
         text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        font-weight: 500;
 
         &:hover {
-          text-decoration: underline;
+          color: $mainlightgreen;
+
         }
       }
     }

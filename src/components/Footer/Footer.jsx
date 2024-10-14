@@ -1,5 +1,6 @@
 import "./Footer.scss";
 import FooterLogo from "../../assets/icons/footer-logo.svg";
+import images from "../../images";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -40,6 +41,7 @@ const Footer = () => {
             <p>
               <a href="tel:+498972939723">+49 89 72 93 97 23</a>
             </p>
+            <p><a href="https://www.linkedin.com/company/ensemble-enabler/" target="_blank"><img src={images.linkedInIcon} alt="LinkedIn Icon" /></a></p>
           </div>
         </div>
 
@@ -60,7 +62,7 @@ const Footer = () => {
               target="_blank"
             ></a>
           </ul>
-          <img src="./assets/icons/linkedln-icon.svg" alt="LinkedIn Icon" />
+          
         </div>
       </div>
     </footer>

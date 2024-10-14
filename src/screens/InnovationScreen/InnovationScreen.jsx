@@ -1,6 +1,6 @@
 import "./InnovationScreen.scss";
 import images from "../../images";
-import PlayCircleIcon from "../../assets/icons/play-circle-icon.svg";
+import { useState, useEffect } from "react";
 
 import BoehringerLogo from "../../assets/icons/boehringer-logo.svg";
 import NokiaLogo from "../../assets/icons/nokia-logo.svg";
@@ -9,6 +9,27 @@ import GeberitLogo from "../../assets/icons/geberit-logo.svg";
 import ThorlabsLogo from "../../assets/icons/thorlabs-logo.svg";
 
 function InnovationScreen() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    const handleEsc = (event) => {
+      if (event.key === "Escape") {
+        setIsModalOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => {
+      window.removeEventListener("keydown", handleEsc);
+    };
+  }, []);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <>
       <div className="hero-container">
@@ -24,18 +45,40 @@ function InnovationScreen() {
                   organization. <br />
                   <em>Leadership powered by Networks.</em>
                 </p>
-                <a className="cta-button">
-                  <span className="icon">
-                    <img src={images.playIcon} alt="Play Button Icon" />
-                  </span>
-                  View our 30 second webinar trailer
-                </a>
+                <div className="cta-button-wrap">
+                  <a className="cta-button" onClick={openModal}>
+                    <span className="icon">
+                      <img src={images.playIcon} alt="Play Button Icon" />
+                    </span>
+                    View our 30 second webinar trailer
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="image-wrapper"></div>
+            <div className="image-wrapper innovation"></div>
           </div>
         </div>
       </div>
+
+      {isModalOpen && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <a className="close-button" onClick={closeModal}>
+              <img src={images.closeIcon} alt="CloseIcon" />
+            </a>
+            <div className="video-wrapper">
+              <iframe
+                src="https://player.vimeo.com/video/1014073509?autoplay=1&title=0&byline=0&portrait=0"
+                frameBorder="0"
+                allow="autoplay; fullscreen"
+                allowFullScreen
+                title="Webinar Trailer"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="clients-section">
         <div className="wrapper">
           <div className="clients-section-inner">
@@ -373,7 +416,9 @@ function InnovationScreen() {
             <div className="right-side">
               <div className="intro-heading">
                 <p>Online Course</p>
-                <h2>Transform The <br/> Way You Lead</h2>
+                <h2>
+                  Transform The <br /> Way You Lead
+                </h2>
               </div>
               <div className="course-content">
                 <h3 className="coure-desc">In this course you will learn:</h3>
@@ -421,25 +466,24 @@ function InnovationScreen() {
                     </p>
                   </li>
                 </ul>
-                
               </div>
               <div className="course-cta">
-                  <h3 className="cta">
-                    Discover the benefits <br/> of becoming a Network Leader.
-                  </h3>
-                  <div className="cta-link">
-                    <a
-                      className="cta-button"
-                      href="https://www.linkedin.com/in/jeffreybeeson/"
-                      target="_blank"
-                    >
-                      Learn more
-                      <span className="icon">
-                        <img src={images.arrowRight} alt="Arrow Right Icon" />
-                      </span>
-                    </a>
-                  </div>
+                <h3 className="cta">
+                  Discover the benefits <br /> of becoming a Network Leader.
+                </h3>
+                <div className="cta-link">
+                  <a
+                    className="cta-button"
+                    href="https://www.linkedin.com/in/jeffreybeeson/"
+                    target="_blank"
+                  >
+                    Learn more
+                    <span className="icon">
+                      <img src={images.arrowRight} alt="Arrow Right Icon" />
+                    </span>
+                  </a>
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -449,232 +493,3 @@ function InnovationScreen() {
 }
 
 export default InnovationScreen;
-
-// const InnovationScreen = () => {
-//   return (
-//     <>
-
-//       <div className="section-1-wrapper">
-//         <section className="section-1">
-//           <div className="section-1-content">
-//             <h1>
-//               Meaningful connections spark ideas for successful innovation
-//             </h1>
-//             <div className="description-in-section-2">
-//               <p>
-//                 Network Leadership unleashes the potential of your organization.
-//                 <br />
-//               </p>
-//               <p>Leadership powered by Networks.</p>
-//             </div>
-
-//             <a href="#" className="cta-button">
-//               <img src={PlayCircleIcon} alt="" />
-//               <span>View our 30 second webinar trailer</span>
-//             </a>
-//           </div>
-//           <img src={images.innovationHeroImg} className="section1Photo" />
-//         </section>
-//       </div>
-
-//       <section className="section-2">
-//         <div className="section-2-content">
-//           <h2>Helping the most successful businesses make better decisions</h2>
-//           <div className="logos-wrapper">
-//             <div className="logos-container">
-//               <img src={BoehringerLogo} alt="Boehringer Ingelheim" />
-//               <img src={NokiaLogo} alt="Nokia" />
-//               <img src={SIXLogo} alt="SIX" />
-//               <img src={GeberitLogo} alt="Geberit" />
-//               <img src={ThorlabsLogo} alt="ThorLabs" />
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* <div className="section-3-wrapper">
-//         <section className="section-3">
-//           <div className="section-3-content-left">
-//             <h2>Connections are the new currency of our time</h2>
-//             <blockquote>
-//               “It’s a profound thought; how every person is a new door, opening
-//               up into other worlds.”
-//               <cite>Jon Guaré</cite>
-//             </blockquote>
-//           </div>
-
-//           <div className="section-3-content-right">
-//             <h3>Innovation is a network issue:</h3>
-//             <ul>
-//               <li>
-//                 <img src={ConnectionIcon} alt="Icon" />
-//                 Network connections eliminate the gap between you and your
-//                 customer.
-//               </li>
-//               <li>
-//                 <img src={StatsPressIcon} alt="Icon" />
-//                 Connections unite diverse perspectives for superior insights.
-//               </li>
-//               <li>
-//                 <img src={GroupIdeaIcon} alt="Icon" />
-//                 Serendipitous ideas arise from strong and meaningful
-//                 connections.
-//               </li>
-//               <li>
-//                 <img src={IdeaBulbIcon} alt="Icon" />
-//                 Diverse ideas spark the innovation that drives breakthroughs.
-//               </li>
-//             </ul>
-//           </div>
-//         </section>
-//       </div>
-//       <div className="section-4-wrapper">
-//         <section className="section-4">
-//           <div className="section-4-content">
-//             <h2>
-//               This network-centric approach shifts the focus to the key issues
-//               that matter.
-//             </h2>
-//             <a href="#" className="cta-button">
-//               <span>View Full Webinar</span>
-//               <img src={ArrowRightIcon} alt="" />
-//             </a>
-
-//             <div className="three-columns-container">
-//               <div className="three-columns-inner-container">
-//                 <div className="column">
-//                   <img src={Section4Wallpaper1} alt="Connections" />
-//                   <h3>Connections</h3>
-//                   <p>
-//                     The way people are connected with each other shapes the
-//                     organization’s effectiveness and success.
-//                   </p>
-//                 </div>
-//                 <div className="column">
-//                   <img
-//                     src={Section4Wallpaper2}
-//                     alt="Flow of Information + Energy"
-//                   />
-//                   <h3>Flow of Information + Energy</h3>
-//                   <p>
-//                     The communication and transmission of ideas through networks
-//                     serve as an organization’s unique lifeblood.
-//                   </p>
-//                 </div>
-//                 <div className="column">
-//                   <img
-//                     src={Section4Wallpaper3}
-//                     alt="Advancing a Dynamic Organization"
-//                   />
-//                   <h3>Advancing a Dynamic Organization</h3>
-//                   <p>
-//                     Networks harness collective creativity to drive growth and
-//                     amplify organizational impact.
-//                   </p>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </section>
-//       </div>
-//       <div className="section-5-wrapper">
-//         <section className="section-5">
-//           <div className="background-image-container"></div>
-//           <img
-//             src={Section5BookMockup}
-//             alt="Network Leadership Book"
-//             className="section5-book-mockup"
-//           />
-//           <div className="section-5-content">
-//             <div className="left-content">
-//               <h2>Benefit from the wisdom of a seasoned professional</h2>
-//               <div className="profile">
-//                 <img
-//                   src={ProfileImageJeffreyBeeson}
-//                   alt="Jeffrey Beeson Profile"
-//                 />
-//                 <div className="profile-info">
-//                   <h3>Jeffrey Beeson, MBA/MA</h3>
-//                   <p>Chief Enabling Officer, Ensemble Enabler</p>
-//                 </div>
-//               </div>
-//               <p className="profile-description">
-//                 His business experience spans the worlds of strategy,
-//                 organizational culture, and leadership development.
-//               </p>
-//               <a href="#" className="cta-button">
-//                 View LinkedIn Profile
-//                 <img src={ArrowRightIcon} alt="Arrow" />
-//               </a>
-//             </div>
-//           </div>
-//         </section>
-//       </div> */}
-
-//       {/* <section className="section-6">
-//         <div className="background-color-container">
-//           <div className="background-image-container">
-//             <div className="section-6-content">
-//               <div className="left-content">
-//                 <img
-//                   src={Section6Illustration}
-//                   alt="Course Image"
-//                   className="course-image"
-//                 />
-//               </div>
-
-//               <div className="right-content">
-//                 <span className="course-tag">ONLINE COURSE</span>
-//                 <h2>Transform The Way You Lead</h2>
-//                 <p className="course-description">
-//                   In this course you will learn:
-//                 </p>
-//                 <ul className="course-benefits">
-//                   <li>
-//                     <img src={BulletIcon} alt="Check" />
-//                     <span>Strategies</span> to effectively navigate and
-//                     capitalize on change
-//                   </li>
-//                   <li>
-//                     <img src={BulletIcon} alt="Check" />
-//                     <span>Insights</span> into how to leverage strategic
-//                     relationships to drive success
-//                   </li>
-//                   <li>
-//                     <img src={BulletIcon} alt="Check" />
-//                     <span>Methods</span> to foster seamless collaboration and
-//                     maximize productivity
-//                   </li>
-//                   <li>
-//                     <img src={BulletIcon} alt="Check" />
-//                     <span>Practices</span> to boost employee engagement and
-//                     retain top talent
-//                   </li>
-//                   <li>
-//                     <img src={BulletIcon} alt="Check" />
-//                     <span>Processes</span> to strengthen resilience against
-//                     unforeseen challenges
-//                   </li>
-//                   <li>
-//                     <img src={BulletIcon} alt="Check" />
-//                     <span>Structures</span> designed to nurture a culture of
-//                     continuous innovation
-//                   </li>
-//                 </ul>
-//                 <p className="final-description">
-//                   Discover the benefits of becoming a Network Leader.
-//                 </p>
-//                 <a href="#" className="cta-button">
-//                   Learn more
-//                   <img src={ArrowRightIcon} alt="Arrow" />
-//                 </a>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </section> */}
-//     </>
-//   );
-// };
-
-// export default InnovationScreen;
