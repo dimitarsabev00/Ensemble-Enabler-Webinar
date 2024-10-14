@@ -1,89 +1,209 @@
-/* CSS Reset */
+@import "base.scss";
+
+/* COMMON CSS */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  vertical-align: baseline;
-  overflow-x: hidden;
+  box-sizing: unset;
 }
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1.5;
-  font-family: sans-serif;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section {
-  display: block;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-  content: "";
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-img,
-video {
-  max-width: 100%;
-  height: auto;
-}
-
-/* General Styles */
 
 * {
   margin: 0;
   padding: 0;
-  font-weight: 500;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+a,
+a:visited,
+a:focus {
+  outline: none;
+  text-decoration: none;
+
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+a img {
+  border: 0 none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 100px 0 100px;
+}
+
+input,
+textarea,
+select {
+  margin: 0;
+  color: #111;
+  font-size: 1.8rem;
+  border: 0 none;
+  background: rgba(0, 0, 0, 0.1);
+  transition: 300ms all ease-in;
+  display: inline-block;
+}
+fieldset {
+  border: none;
+}
+
+input.text,
+input[type="date"],
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  padding: 0 10px;
+  line-height: 4rem;
+  height: auto;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+input.text:focus,
+input[type="date"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  background: #f7f7f7;
+  border-bottom: 1px solid #ccc;
+}
+
+select {
+  padding: 0 5px;
+  line-height: 40px;
+  height: 40px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+select option {
+  padding: 5px;
+}
+textarea {
+  padding: 5px 10px;
+  line-height: 1.8rem;
+  height: auto;
+  min-height: 130px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+input.submit,
+input[type="submit"] {
+  color: #fff;
+  font-size: 2rem;
+  background: #549bd1;
+  height: auto;
+  line-height: 2.6rem;
+  text-align: center;
+  padding: 7px 40px;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: 0 none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input:hover.submit,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background: #244966;
+}
+
+input.reset,
+input[type="reset"] {
+  color: #fff;
+  font-size: 2rem;
+  background: #000;
+  height: auto;
+  line-height: 2.6rem;
+  text-align: center;
+  padding: 7px 40px;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: 0 none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input:hover.reset,
+input[type="reset"]:hover {
+  background: #333;
 }
 
 h1,
 h2,
 h3,
-blockquote {
-  overflow: hidden;
+h4 {
+  font-size: 3.25rem;
+  line-height: 3.5rem;
+  font-family: Sentient, sans-serif;
+  font-weight: normal;
+  color: $headings;
+  letter-spacing: -1px;
+}
+
+p {
+  font-size: 1rem;
+  font-family: GeneralSans, sans-serif;
+  font-weight: normal;
+  color: $headings;
+}
+
+/* --- END COMMON CSS --- */
+/* --- START HEADING --- */
+
+html {
+  font-size: 16px;
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  font-family: GeneralSans, sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.1;
+  color: $headings;
   background-color: #fff;
 }

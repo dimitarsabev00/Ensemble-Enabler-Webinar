@@ -26,6 +26,7 @@ const RoutesComp = () => {
         <Route path="/performance" element={<PerformanceScreen />} />
         <Route path="/talent" element={<TalentScreen />} />
         <Route path="/ai" element={<AIScreen />} />
+        {/* <Route path="/thank-you" element={<InnovationScreen />} /> */}
       </Routes>
       <Footer />
     </>

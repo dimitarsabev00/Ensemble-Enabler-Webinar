@@ -1,32 +1,53 @@
-/* Make Colors Variables */
-// $black-color: #021019;
+/* VARS*/
+$maindarkgreen: #084C2B;
+$mainlightgreen: #41B729;
+$headings: #173F28;
+$beige: #EDECDA;
+$white: #FBF4EE;
 
-/* Font Faces */
+
+/* FONTS */
 
 @font-face {
-  font-family: "Sentient-Light";
-  src: url("./assets/fonts/Sentient-Light.wolff2") format("wolff2");
+  font-family: "GeneralSans";
+  src: url("./assets/fonts/GeneralSans-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "GeneralSans-Medium";
-  src: url("./assets/icons/GeneralSans-Medium.wolff2") format("wolff2");
+  font-family: "GeneralSans";
+  src: url("./assets/fonts/GeneralSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "GeneralSans";
+  src: url("./assets/fonts/GeneralSans-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Sentient";
+  src: url("./assets/fonts/Sentient-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Sentient-Regular";
-  src: url("./assets/icons/Sentient-Regular.wolff2") format("wolff2");
-  font-weight: normal;
+  font-family: "Sentient";
+  src: url("./assets/fonts/Sentient-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Sentient-Italic";
-  src: url("./Sentient-Italic.wolff2") format("opentype");
+  font-family: "Sentient";
+  src: url("./assets/fonts/Sentient-Italic.woff2") format("woff2");
   font-weight: normal;
   font-style: italic;
 }

@@ -1,7 +1,15 @@
+@import "../../base.scss";
+
 header {
-  background-color: #1d5a3a;
-  padding: 30px 116px;
+  background-color: $maindarkgreen;
+}
+.header-wrap {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
+  padding: 30px 0;
+
+  img {
+    max-width: 300px  ;
+  }
 }
