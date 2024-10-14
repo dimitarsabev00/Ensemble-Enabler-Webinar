@@ -26,35 +26,33 @@ import ProfileImageJeffreyBeeson from "../../assets/images/profileImage-jeffrey-
 import Section6Illustration from "../../assets/images/section6-illustration.png";
 
 import BulletIcon from "../../assets/icons/bullet-icon.svg";
+
+import Section1Photo from "../../assets/images/section2Image.png";
 const InnovationScreen = () => {
   return (
     <>
-      <section className="section-1">
-        <div className="background-color-container">
-          <div className="background-image-container">
-            <div className="section-1-content-left">
-              <h1>
-                Meaningful connections spark ideas for successful innovation
-              </h1>
-              <div className="description-in-section-2">
-                <p>
-                  Network Leadership unleashes the potential of your
-                  organization.
-                  <br />
-                </p>
-                <p>Leadership powered by Networks.</p>
-              </div>
-
-              <a href="#" className="cta-button">
-                <img src={PlayCircleIcon} alt="" />
-                <span>View our 30 second webinar trailer</span>
-              </a>
+      <div className="section-1-wrapper">
+        <section className="section-1">
+          <div className="section-1-content">
+            <h1>
+              Meaningful connections spark ideas for successful innovation
+            </h1>
+            <div className="description-in-section-2">
+              <p>
+                Network Leadership unleashes the potential of your organization.
+                <br />
+              </p>
+              <p>Leadership powered by Networks.</p>
             </div>
-          </div>
-        </div>
 
-        <div className="image-container"></div>
-      </section>
+            <a href="#" className="cta-button">
+              <img src={PlayCircleIcon} alt="" />
+              <span>View our 30 second webinar trailer</span>
+            </a>
+          </div>
+          <img src={Section1Photo} className="section1Photo" />
+        </section>
+      </div>
 
       <section className="section-2">
         <div className="section-2-content">
@@ -71,95 +69,93 @@ const InnovationScreen = () => {
         </div>
       </section>
 
-      <section className="section-3">
-        <div className="background-color-container">
-          <div className="background-image-container">
-            <div className="section-3-content-left">
-              <h2>Connections are the new currency of our time</h2>
-              <blockquote>
-                “It’s a profound thought; how every person is a new door,
-                opening up into other worlds.”
-                <cite>Jon Guaré</cite>
-              </blockquote>
-            </div>
+      <div className="section-3-wrapper">
+        <section className="section-3">
+          <div className="section-3-content-left">
+            <h2>Connections are the new currency of our time</h2>
+            <blockquote>
+              “It’s a profound thought; how every person is a new door, opening
+              up into other worlds.”
+              <cite>Jon Guaré</cite>
+            </blockquote>
+          </div>
 
-            <div className="section-3-content-right">
-              <h3>Innovation is a network issue:</h3>
-              <ul>
-                <li>
-                  <img src={ConnectionIcon} alt="Icon" />
-                  Network connections eliminate the gap between you and your
-                  customer.
-                </li>
-                <li>
-                  <img src={StatsPressIcon} alt="Icon" />
-                  Connections unite diverse perspectives for superior insights.
-                </li>
-                <li>
-                  <img src={GroupIdeaIcon} alt="Icon" />
-                  Serendipitous ideas arise from strong and meaningful
-                  connections.
-                </li>
-                <li>
-                  <img src={IdeaBulbIcon} alt="Icon" />
-                  Diverse ideas spark the innovation that drives breakthroughs.
-                </li>
-              </ul>
+          <div className="section-3-content-right">
+            <h3>Innovation is a network issue:</h3>
+            <ul>
+              <li>
+                <img src={ConnectionIcon} alt="Icon" />
+                Network connections eliminate the gap between you and your
+                customer.
+              </li>
+              <li>
+                <img src={StatsPressIcon} alt="Icon" />
+                Connections unite diverse perspectives for superior insights.
+              </li>
+              <li>
+                <img src={GroupIdeaIcon} alt="Icon" />
+                Serendipitous ideas arise from strong and meaningful
+                connections.
+              </li>
+              <li>
+                <img src={IdeaBulbIcon} alt="Icon" />
+                Diverse ideas spark the innovation that drives breakthroughs.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div className="section-4-wrapper">
+        <section className="section-4">
+          <div className="section-4-content">
+            <h2>
+              This network-centric approach shifts the focus to the key issues
+              that matter.
+            </h2>
+            <a href="#" className="cta-button">
+              <span>View Full Webinar</span>
+              <img src={ArrowRightIcon} alt="" />
+            </a>
+
+            <div className="three-columns-container">
+              <div className="three-columns-inner-container">
+                <div className="column">
+                  <img src={Section4Wallpaper1} alt="Connections" />
+                  <h3>Connections</h3>
+                  <p>
+                    The way people are connected with each other shapes the
+                    organization’s effectiveness and success.
+                  </p>
+                </div>
+                <div className="column">
+                  <img
+                    src={Section4Wallpaper2}
+                    alt="Flow of Information + Energy"
+                  />
+                  <h3>Flow of Information + Energy</h3>
+                  <p>
+                    The communication and transmission of ideas through networks
+                    serve as an organization’s unique lifeblood.
+                  </p>
+                </div>
+                <div className="column">
+                  <img
+                    src={Section4Wallpaper3}
+                    alt="Advancing a Dynamic Organization"
+                  />
+                  <h3>Advancing a Dynamic Organization</h3>
+                  <p>
+                    Networks harness collective creativity to drive growth and
+                    amplify organizational impact.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="section-4">
-        <div className="section-4-content">
-          <h2>
-            This network-centric approach shifts the focus to the key issues
-            that matter.
-          </h2>
-          <a href="#" className="cta-button">
-            <span>View Full Webinar</span>
-            <img src={ArrowRightIcon} alt="" />
-          </a>
-
-          <div className="three-columns-container">
-            <div className="three-columns-inner-container">
-              <div className="column">
-                <img src={Section4Wallpaper1} alt="Connections" />
-                <h3>Connections</h3>
-                <p>
-                  The way people are connected with each other shapes the
-                  organization’s effectiveness and success.
-                </p>
-              </div>
-              <div className="column">
-                <img
-                  src={Section4Wallpaper2}
-                  alt="Flow of Information + Energy"
-                />
-                <h3>Flow of Information + Energy</h3>
-                <p>
-                  The communication and transmission of ideas through networks
-                  serve as an organization’s unique lifeblood.
-                </p>
-              </div>
-              <div className="column">
-                <img
-                  src={Section4Wallpaper3}
-                  alt="Advancing a Dynamic Organization"
-                />
-                <h3>Advancing a Dynamic Organization</h3>
-                <p>
-                  Networks harness collective creativity to drive growth and
-                  amplify organizational impact.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section-5">
-        <div className="background-color-container">
+        </section>
+      </div>
+      <div className="section-5-wrapper">
+        <section className="section-5">
           <div className="background-image-container"></div>
           <img
             src={Section5BookMockup}
@@ -189,8 +185,9 @@ const InnovationScreen = () => {
               </a>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+
       <section className="section-6">
         <div className="background-color-container">
           <div className="background-image-container">
