@@ -1,1 +1,34 @@
 @import "../../base.scss";
+/*HERO SECTION*/
+.hero-container {
+  .image-wrapper.webinar {
+    background-image: url("../../assets/images/webinar-hero-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 846px;
+    height: 700px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+
+    @media (max-width: 1440px) {
+      display: none;
+      height: auto;
+    }
+  }
+}
+
+.connections-section {
+  .left-side.webinar {
+    .quote-author {
+      padding-bottom: 5px;
+    }
+
+    .pos {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+}

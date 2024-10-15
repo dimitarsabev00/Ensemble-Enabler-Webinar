@@ -235,7 +235,7 @@ function InnovationScreen() {
                   <div id="mc_embed_shell">
                     <div id="mc_embed_signup">
                       <form
-                        action="https://ensembleenabler.us17.list-manage.com/subscribe/post?u=23a3dfcbb4365f882ab8a864e&amp;id=b1e67698ee&amp;f_id=0004e8e3f0"
+                        action="https://ensembleenabler.us17.list-manage.com/subscribe/post?u=23a3dfcbb4365f882ab8a864e&amp;id=b1e67698ee&amp;f_id=000de8e3f0"
                         method="post"
                         id="mc-embedded-subscribe-form"
                         name="mc-embedded-subscribe-form"
@@ -474,7 +474,7 @@ function InnovationScreen() {
                 <div className="cta-link">
                   <a
                     className="cta-button"
-                    href="https://www.linkedin.com/in/jeffreybeeson/"
+                    href="https://enablerforum.learnworlds.com/home?site_template_id=661534b5c6e109822d01676d"
                     target="_blank"
                   >
                     Learn more

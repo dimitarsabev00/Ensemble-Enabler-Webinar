@@ -22,6 +22,18 @@ import performanceIcon2Svg from './assets/images/performance-icon-2.svg';
 import performanceIcon3Svg from './assets/images/performance-icon-3.svg';
 import performanceIcon4Svg from './assets/images/performance-icon-4.svg';
 
+import webinarIcon1Svg from './assets/images/webinar-icon-1.svg';
+import webinarIcon2Svg from './assets/images/webinar-icon-2.svg';
+import webinarIcon3Svg from './assets/images/webinar-icon-3.svg';
+import webinarIcon4Svg from './assets/images/webinar-icon-4.svg';
+
+import aiIcon1Svg from './assets/images/ai-icon-1.svg';
+import aiIcon2Svg from './assets/images/ai-icon-2.svg';
+import aiIcon3Svg from './assets/images/ai-icon-3.svg';
+import aiIcon4Svg from './assets/images/ai-icon-4.svg';
+
+import jeffreyTy from './assets/images/jeffrey-beeson-ty.png'
+
 
 const images = {
   advancingImg,
@@ -45,7 +57,16 @@ const images = {
   performanceIcon1Svg,
   performanceIcon2Svg,
   performanceIcon3Svg,
-  performanceIcon4Svg
+  performanceIcon4Svg,
+  webinarIcon1Svg,
+  webinarIcon2Svg,
+  webinarIcon3Svg,
+  webinarIcon4Svg,
+  aiIcon1Svg,
+  aiIcon2Svg,
+  aiIcon3Svg,
+  aiIcon4Svg,
+  jeffreyTy
   
 };
 

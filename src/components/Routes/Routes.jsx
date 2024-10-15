@@ -4,10 +4,15 @@ import {
   InnovationScreen,
   PerformanceScreen,
   TalentScreen,
+ 
+
 } from "../../screens";
 import { useEffect } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+
+import ThankYou from "../../screens/Confirmations/ThankYou";
+import Confirmation from "../../screens/Confirmations/Confirmation";
 
 const RoutesComp = () => {
   const location = useLocation();
@@ -26,7 +31,8 @@ const RoutesComp = () => {
         <Route path="/performance" element={<PerformanceScreen />} />
         <Route path="/talent" element={<TalentScreen />} />
         <Route path="/ai" element={<AIScreen />} />
-        {/* <Route path="/thank-you" element={<InnovationScreen />} /> */}
+        <Route path="/confirmation" element={<Confirmation />} />
+        <Route path="/thank-you" element={<ThankYou/>} />
       </Routes>
       <Footer />
     </>

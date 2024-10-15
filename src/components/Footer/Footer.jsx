@@ -14,19 +14,19 @@ const Footer = () => {
             <h2>Pages</h2>
             <ul>
               <li>
-                <a href="#">What we do</a>
+                <a href="https://www.ensembleenabler.com/en/what-we-do/" target="_blank">What we do</a>
               </li>
               <li>
-                <a href="#">Who we are</a>
+                <a href="https://www.ensembleenabler.com/en/who-we-are/" target="_blank">Who we are</a>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <a href="https://www.ensembleenabler.com/en/blog/" target="_blank">Blog</a>
               </li>
               <li>
-                <a href="#">The Ripple</a>
+                <a href="https://www.ensembleenabler.com/en/ripple/" target="_blank">The Ripple</a>
               </li>
               <li>
-                <a href="#">Deutsch</a>
+                <a href="https://www.ensembleenabler.com/de/" target="_blank">Deutsch</a>
               </li>
             </ul>
           </div>
@@ -49,13 +49,13 @@ const Footer = () => {
           <p>&copy; 2024 Ensemble Enabler. All rights reserved.</p>
           <ul className="footer-bottom-links">
             <li>
-              <a href="#">Privacy Policy</a>
+              <a href="https://www.ensembleenabler.com/en/privacy-policy/" target="_blank">Privacy Policy</a>
             </li>
             <li>
-              <a href="#">Imprint</a>
+              <a href="https://www.ensembleenabler.com/en/imprint/" target="_blank">Imprint</a>
             </li>
             <li>
-              <a href="#">Connect with us</a>
+              <a href="https://www.ensembleenabler.com/en/contact-2/" target="_blank">Connect with us</a>
             </li>
             <a
               href="https://www.linkedin.com/company/ensemble-enabler/"

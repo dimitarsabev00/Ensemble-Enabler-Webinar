@@ -1,1 +1,47 @@
 @import "../../base.scss";
+
+/*HERO SECTION*/
+.hero-container {
+    .image-wrapper.ai {
+      background-image: url("../../assets/images/ai-hero-img.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 846px;
+      height: 700px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      top: 0;
+  
+      @media (max-width: 1440px) {
+        display: none;
+        height: auto;
+      }
+    }
+  }
+  
+  .connections-section {
+    .left-side.ai {
+      .quote-author {
+        padding-bottom: 5px;
+      }
+  
+      .pos {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+    .right-side.ai {
+      h3 {
+        padding-bottom: 0;
+      }
+      h4 {
+        font-family: GeneralSans, sans-serif;
+        font-weight: 500;
+        font-size: 2rem;
+        padding-bottom: 30px;
+      }
+    }
+  }
+  
