@@ -15,7 +15,7 @@ import playIcon from './assets/images/play-icon.svg';
 import arrowRight from './assets/images/arrow-right-icon.svg';
 import webinarImg from './assets/images/webinar-img.png';
 import linkedInIcon from './assets/images/LinkedIn.svg';
-import closeIcon from './assets/images/x.svg';
+import closeIcon from './assets/images/closeIcon.svg';
 
 import performanceIcon1Svg from './assets/images/performance-icon-1.svg';
 import performanceIcon2Svg from './assets/images/performance-icon-2.svg';

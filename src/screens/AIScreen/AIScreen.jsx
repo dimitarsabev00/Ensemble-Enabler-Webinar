@@ -36,10 +36,7 @@ const AIScreen = () => {
           <div className="hero-inner-container">
             <div className="text-content-wrap">
               <div className="text-content">
-                <h1>
-                Strategy and people take precedence over
-                AI strategy
-                </h1>
+                <h1>Strategy and people take precedence over AI strategy</h1>
                 <p>
                   Network Leadership unleashes the potential of your
                   organization. <br />
@@ -110,11 +107,14 @@ const AIScreen = () => {
           <div className="connections-section-wrap">
             <div className="left-side ai">
               <h2>
-              A successful AI strategy relies on enhancing people's skills and capabilities rather than replacing them
+                A successful AI strategy relies on enhancing people's skills and
+                capabilities rather than replacing them
               </h2>
               <div className="quote-wrap">
                 <p className="quote-text">
-                “It’s a leader’s job to create work conditions that motivate employees to be curious about how AI can help them perform better.”
+                  “It’s a leader’s job to create work conditions that motivate
+                  employees to be curious about how AI can help them perform
+                  better.”
                 </p>
                 <p className="quote-author">David de Cremer</p>
                 <p className="pos">Author of “The AI-Savvy Leader”</p>
@@ -126,40 +126,32 @@ const AIScreen = () => {
               <div className="icon-list-wrap">
                 <ul className="icon-list">
                   <li>
-                    <img
-                      src={images.aiIcon1Svg}
-                      alt="Innovation Icon"
-                    />
+                    <img src={images.aiIcon1Svg} alt="Innovation Icon" />
                     <p>
-                    Crafts a clear vision to integrate AI within the organization.
+                      Crafts a clear vision to integrate AI within the
+                      organization.
                     </p>
                   </li>
                   <li>
-                    <img
-                      src={images.aiIcon2Svg}
-                      alt="Innovation Icon"
-                    />
+                    <img src={images.aiIcon2Svg} alt="Innovation Icon" />
                     <p>
-                    Utilizes engagement catalyst questions to enhance stakeholder involvement.
+                      Utilizes engagement catalyst questions to enhance
+                      stakeholder involvement.
                     </p>
                   </li>
                   <li>
-                    <img
-                      src={images.aiIcon3Svg}
-                      alt="Innovation Icon"
-                    />
+                    <img src={images.aiIcon3Svg} alt="Innovation Icon" />
                     <p>
-                    Explores innovative approaches, empowering stakeholders to influence the evolving applications of AI throughout the organization.
+                      Explores innovative approaches, empowering stakeholders to
+                      influence the evolving applications of AI throughout the
+                      organization.
                     </p>
                   </li>
                   <li>
-                    <img
-                      src={images.aiIcon4Svg}
-                      alt="Innovation Icon"
-                    />
+                    <img src={images.aiIcon4Svg} alt="Innovation Icon" />
                     <p>
-                    Commits to ongoing investment to 
-                    up-skill and build capacity building of all team members.
+                      Commits to ongoing investment to up-skill and build
+                      capacity building of all team members.
                     </p>
                   </li>
                 </ul>
@@ -244,9 +236,13 @@ const AIScreen = () => {
                         noValidate
                       >
                         <div id="mc_embed_signup_scroll">
+                          <div className="indicates-required">
+                            <span className="asterisk">*</span> indicates
+                            required
+                          </div>
                           <div className="mc-field-group">
                             <label htmlFor="mce-EMAIL">
-                              Email <span className="asterisk">*</span>
+                              E-Mail <span className="asterisk">*</span>
                             </label>
                             <input
                               type="email"
@@ -283,8 +279,12 @@ const AIScreen = () => {
                               defaultValue=""
                             />
                           </div>
-                          <div hidden="">
-                            <input type="hidden" name="tags" value="8333000" />
+                          <div hidden>
+                            <input
+                              type="hidden"
+                              name="tags"
+                              value="8333021,8333023"
+                            />
                           </div>
                           <div id="mce-responses" className="clear">
                             <div
@@ -304,14 +304,10 @@ const AIScreen = () => {
                           >
                             <input
                               type="text"
-                              name="b_23a3dfcbb4365f882ab8a864e_9db602db15"
+                              name="b_23a3dfcbb4365f882ab8a864e_b1e67698ee"
                               tabIndex="-1"
                               defaultValue=""
                             />
-                          </div>
-                          <div className="indicates-required">
-                            <span className="asterisk">*</span> indicates
-                            required
                           </div>
                           <div className="clear">
                             <input
@@ -319,7 +315,7 @@ const AIScreen = () => {
                               name="subscribe"
                               id="mc-embedded-subscribe"
                               className="button"
-                              value="View Full Webinar"
+                              value="Subscribe"
                             />
                           </div>
                         </div>

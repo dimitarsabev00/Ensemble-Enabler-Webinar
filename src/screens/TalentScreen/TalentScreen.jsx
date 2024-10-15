@@ -38,8 +38,8 @@ const TalentScreen = () => {
             <div className="text-content-wrap">
               <div className="text-content">
                 <h1>
-                Stronger people connections boost engagement and a 
-                sense of belonging
+                  Stronger people connections boost engagement and a sense of
+                  belonging
                 </h1>
                 <p>
                   Network Leadership unleashes the potential of your
@@ -110,12 +110,15 @@ const TalentScreen = () => {
         <div className="wrapper">
           <div className="connections-section-wrap">
             <div className="left-side webinar">
-              <h2>Closing the connection gap is vital for effective collaboration and
-              talent retention</h2>
+              <h2>
+                Closing the connection gap is vital for effective collaboration
+                and talent retention
+              </h2>
               <div className="quote-wrap">
                 <p className="quote-text">
-                “If we connect what we stand for as individuals with what this
-                company is capable of, there is very little we can’t accomplish”
+                  “If we connect what we stand for as individuals with what this
+                  company is capable of, there is very little we can’t
+                  accomplish”
                 </p>
                 <p className="quote-author">Satya Nadella</p>
                 <p className="pos">CEO Microsoft</p>
@@ -126,39 +129,31 @@ const TalentScreen = () => {
               <div className="icon-list-wrap">
                 <ul className="icon-list">
                   <li>
-                    <img
-                      src={images.webinarIcon1Svg}
-                      alt="Innovation Icon"
-                    />
+                    <img src={images.webinarIcon1Svg} alt="Innovation Icon" />
                     <p>
-                    Strong connections enhance the quality of communication throughout the organization.
+                      Strong connections enhance the quality of communication
+                      throughout the organization.
                     </p>
                   </li>
                   <li>
-                    <img
-                      src={images.webinarIcon2Svg}
-                      alt="Innovation Icon"
-                    />
+                    <img src={images.webinarIcon2Svg} alt="Innovation Icon" />
                     <p>
-                    Connections lay the groundwork for improved collaboration across teams and functions.
+                      Connections lay the groundwork for improved collaboration
+                      across teams and functions.
                     </p>
                   </li>
                   <li>
-                    <img
-                      src={images.webinarIcon3Svg}
-                      alt="Innovation Icon"
-                    />
+                    <img src={images.webinarIcon3Svg} alt="Innovation Icon" />
                     <p>
-                    Relationships among individuals foster a sense of community and belonging.
+                      Relationships among individuals foster a sense of
+                      community and belonging.
                     </p>
                   </li>
                   <li>
-                    <img
-                      src={images.webinarIcon4Svg}
-                      alt="Innovation Icon"
-                    />
+                    <img src={images.webinarIcon4Svg} alt="Innovation Icon" />
                     <p>
-                    Connections promote an environment of both social and lifelong learning
+                      Connections promote an environment of both social and
+                      lifelong learning
                     </p>
                   </li>
                 </ul>
@@ -243,9 +238,13 @@ const TalentScreen = () => {
                         noValidate
                       >
                         <div id="mc_embed_signup_scroll">
+                          <div className="indicates-required">
+                            <span className="asterisk">*</span> indicates
+                            required
+                          </div>
                           <div className="mc-field-group">
                             <label htmlFor="mce-EMAIL">
-                              Email <span className="asterisk">*</span>
+                              E-Mail <span className="asterisk">*</span>
                             </label>
                             <input
                               type="email"
@@ -282,8 +281,12 @@ const TalentScreen = () => {
                               defaultValue=""
                             />
                           </div>
-                          <div hidden="">
-                            <input type="hidden" name="tags" value="8333000" />
+                          <div hidden>
+                            <input
+                              type="hidden"
+                              name="tags"
+                              value="8333021,8333022"
+                            />
                           </div>
                           <div id="mce-responses" className="clear">
                             <div
@@ -303,14 +306,10 @@ const TalentScreen = () => {
                           >
                             <input
                               type="text"
-                              name="b_23a3dfcbb4365f882ab8a864e_9db602db15"
+                              name="b_23a3dfcbb4365f882ab8a864e_b1e67698ee"
                               tabIndex="-1"
                               defaultValue=""
                             />
-                          </div>
-                          <div className="indicates-required">
-                            <span className="asterisk">*</span> indicates
-                            required
                           </div>
                           <div className="clear">
                             <input
@@ -318,7 +317,7 @@ const TalentScreen = () => {
                               name="subscribe"
                               id="mc-embedded-subscribe"
                               className="button"
-                              value="View Full Webinar"
+                              value="Subscribe"
                             />
                           </div>
                         </div>

@@ -244,9 +244,13 @@ function InnovationScreen() {
                         noValidate
                       >
                         <div id="mc_embed_signup_scroll">
+                          <div className="indicates-required">
+                            <span className="asterisk">*</span> indicates
+                            required
+                          </div>
                           <div className="mc-field-group">
                             <label htmlFor="mce-EMAIL">
-                              Email <span className="asterisk">*</span>
+                              E-Mail <span className="asterisk">*</span>
                             </label>
                             <input
                               type="email"
@@ -283,8 +287,12 @@ function InnovationScreen() {
                               defaultValue=""
                             />
                           </div>
-                          <div hidden="">
-                            <input type="hidden" name="tags" value="8333000" />
+                          <div hidden>
+                            <input
+                              type="hidden"
+                              name="tags"
+                              value="8333009,8333021"
+                            />
                           </div>
                           <div id="mce-responses" className="clear">
                             <div
@@ -304,14 +312,10 @@ function InnovationScreen() {
                           >
                             <input
                               type="text"
-                              name="b_23a3dfcbb4365f882ab8a864e_9db602db15"
+                              name="b_23a3dfcbb4365f882ab8a864e_b1e67698ee"
                               tabIndex="-1"
                               defaultValue=""
                             />
-                          </div>
-                          <div className="indicates-required">
-                            <span className="asterisk">*</span> indicates
-                            required
                           </div>
                           <div className="clear">
                             <input
@@ -319,13 +323,14 @@ function InnovationScreen() {
                               name="subscribe"
                               id="mc-embedded-subscribe"
                               className="button"
-                              value="View Full Webinar"
+                              value="Subscribe"
                             />
                           </div>
                         </div>
                       </form>
                     </div>
                   </div>
+
                   <div className="gdpr">
                     <p>
                       We comply with all European GDPR guidelines.  Your data
