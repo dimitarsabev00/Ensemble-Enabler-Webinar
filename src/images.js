@@ -4,7 +4,6 @@ import colarSvg from './assets/images/colar-svg.svg';
 import connectionImg from './assets/images/connection-img.jpg';
 import coralIconSvg from './assets/images/coral-icon.svg';
 import flowOfInfoImg from './assets/images/flow-of-info-img.jpg';
-import innovationHeroImg from './assets/images/innovation-hero-img.png';
 import innovationIcon1Svg from './assets/images/innovation-icon-1.svg';
 import innovationIcon2Svg from './assets/images/innovation-icon-2.svg';
 import innovationIcon3Svg from './assets/images/innovation-icon-3.svg';
@@ -16,6 +15,12 @@ import arrowRight from './assets/images/arrow-right-icon.svg';
 import webinarImg from './assets/images/webinar-img.png';
 import linkedInIcon from './assets/images/LinkedIn.svg';
 import closeIcon from './assets/images/closeIcon.svg';
+
+import innovationHeroImg from './assets/images/innovation-hero-img.png';
+import performanceHeroImg from './assets/images/performance-hero-img.png';
+import webinarHeroImg from './assets/images/webinar-hero-img.png';
+import aiHeroImg from './assets/images/ai-hero-img.png';
+
 
 import performanceIcon1Svg from './assets/images/performance-icon-1.svg';
 import performanceIcon2Svg from './assets/images/performance-icon-2.svg';
@@ -66,8 +71,11 @@ const images = {
   aiIcon2Svg,
   aiIcon3Svg,
   aiIcon4Svg,
-  jeffreyTy
-  
+  jeffreyTy,
+  innovationHeroImg,
+  performanceHeroImg,
+  webinarHeroImg,
+  aiHeroImg
 };
 
 export default images;

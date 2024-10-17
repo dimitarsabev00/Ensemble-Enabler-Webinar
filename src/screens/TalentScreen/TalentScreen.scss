@@ -1,6 +1,8 @@
 @import "../../base.scss";
+
 /*HERO SECTION*/
 .hero-container {
+  
   .image-wrapper.webinar {
     background-image: url("../../assets/images/webinar-hero-img.png");
     background-repeat: no-repeat;
@@ -13,13 +15,29 @@
     right: 0;
     top: 0;
 
-    @media (max-width: 1440px) {
+    .mobile-image {
       display: none;
+    }
+
+    img {
+      display: block;
+    }
+
+    @media (max-width: 1440px) {
+      // display: none;
+      background-image: none;
       height: auto;
+      position: unset;
+      margin-left: auto;
+      width: auto;
+      padding-left: 30px;
+
+      .mobile-image {
+        display: block;
+      }
     }
   }
 }
-
 .connections-section {
   .left-side.webinar {
     .quote-author {

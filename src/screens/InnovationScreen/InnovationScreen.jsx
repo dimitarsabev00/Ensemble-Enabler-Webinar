@@ -33,9 +33,9 @@ function InnovationScreen() {
   return (
     <>
       <div className="hero-container">
-        <div className="wrapper">
-          <div className="hero-inner-container">
-            <div className="text-content-wrap">
+        <div className="hero-inner-container">
+          <div className="text-content-wrap">
+            <div className="text-content-inner">
               <div className="text-content">
                 <h1>
                   Meaningful connections spark ideas for successful innovation
@@ -55,7 +55,11 @@ function InnovationScreen() {
                 </div>
               </div>
             </div>
-            <div className="image-wrapper innovation"></div>
+          </div>
+          <div className="image-wrapper innovation">
+            <div className="mobile-image">
+              <img src={images.innovationHeroImg} alt="Innovation Hero Image" />
+            </div>
           </div>
         </div>
       </div>
@@ -479,7 +483,7 @@ function InnovationScreen() {
                 <div className="cta-link">
                   <a
                     className="cta-button"
-                    href="https://enablerforum.learnworlds.com/home?site_template_id=661534b5c6e109822d01676d"
+                    href="https://cli.re/Network-Leadership-Quest"
                     target="_blank"
                   >
                     Learn more

@@ -32,7 +32,6 @@ const PerformanceScreen = () => {
   return (
     <>
       <div className="hero-container">
-        <div className="wrapper">
           <div className="hero-inner-container">
             <div className="text-content-wrap">
               <div className="text-content">
@@ -55,9 +54,10 @@ const PerformanceScreen = () => {
                 </div>
               </div>
             </div>
-            <div className="image-wrapper performance"></div>
+            <div className="image-wrapper performance">
+              <img src={images.performanceHeroImg} alt="Innovation Hero Image" />
+            </div>
           </div>
-        </div>
       </div>
 
       {isModalOpen && (
@@ -483,7 +483,7 @@ const PerformanceScreen = () => {
                 <div className="cta-link">
                   <a
                     className="cta-button"
-                    href="https://enablerforum.learnworlds.com/home?site_template_id=661534b5c6e109822d01676d"
+                    href="https://cli.re/Network-Leadership-Quest"
                     target="_blank"
                   >
                     Learn more

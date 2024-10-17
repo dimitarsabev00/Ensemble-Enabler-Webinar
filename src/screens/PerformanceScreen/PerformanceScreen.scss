@@ -2,6 +2,7 @@
 
 /*HERO SECTION*/
 .hero-container {
+  
   .image-wrapper.performance {
     background-image: url("../../assets/images/performance-hero-img.png");
     background-repeat: no-repeat;
@@ -14,9 +15,26 @@
     right: 0;
     top: 0;
 
-    @media (max-width: 1440px) {
+    .mobile-image {
       display: none;
+    }
+
+    img {
+      display: block;
+    }
+
+    @media (max-width: 1440px) {
+      // display: none;
+      background-image: none;
       height: auto;
+      position: unset;
+      margin-left: auto;
+      width: auto;
+      padding-left: 30px;
+
+      .mobile-image {
+        display: block;
+      }
     }
   }
 }

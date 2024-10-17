@@ -21,10 +21,19 @@
     gap: 80px;
     height: 700px;
 
+    .text-content-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
     @media (max-width: 1440px) {
       flex-direction: column;
-      padding: 100px 0;
+      padding: 80px 0 0 0;
       height: auto;
+
+      .text-content-wrap {
+        padding: 30px;
+      }
     }
   }
 
@@ -32,15 +41,24 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    width: 500px;
+    padding-right: 55%;
 
     @media (max-width: 1440px) {
       align-items: center;
       text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      padding: auto;
+
+      h1 {
+        width: 70%;
+      }
     }
 
-    @media (max-width: 1024px) {
-      width: auto;
+    @media (max-width: 960px) {
+      h1 {
+        width: 100%;
+      }
     }
 
     p {
@@ -67,9 +85,26 @@
     right: 0;
     top: 0;
 
-    @media (max-width: 1440px) {
+    .mobile-image {
       display: none;
+    }
+
+    img {
+      display: block;
+    }
+
+    @media (max-width: 1440px) {
+      // display: none;
+      background-image: none;
       height: auto;
+      position: unset;
+      margin-left: auto;
+      width: auto;
+      padding-left: 30px;
+
+      .mobile-image {
+        display: block;
+      }
     }
   }
 }
@@ -102,7 +137,9 @@
 
       @media (max-width: 640px) {
         gap: 30px;
-        img {max-width: 120px;}
+        img {
+          max-width: 120px;
+        }
       }
     }
   }
@@ -171,13 +208,13 @@
 
             @media (max-width: 1024px) {
               flex-direction: column;
-              
             }
           }
 
           @media (max-width: 640px) {
             img {
-              max-width: 80px;}
+              max-width: 80px;
+            }
           }
         }
       }
@@ -185,7 +222,6 @@
 
     h2 {
       padding-bottom: 40px;
-      
     }
     h3 {
       font-family: GeneralSans, sans-serif;
@@ -278,7 +314,7 @@
         align-content: flex-start;
         gap: 40px;
 
-        @media (max-width: 1024px){
+        @media (max-width: 1024px) {
           flex-direction: column;
         }
 
@@ -286,7 +322,9 @@
           flex: 1;
 
           @media (max-width: 1024px) {
-            img {width: 100%;}
+            img {
+              width: 100%;
+            }
           }
         }
 
@@ -430,8 +468,6 @@
         align-items: center;
         gap: 20px;
 
-
-
         .profile-credentials {
           h3 {
             font-size: 1.9rem;
@@ -451,19 +487,19 @@
               line-height: 1.2;
               padding-bottom: 10px;
             }
-  
+
             p {
               font-size: 1rem;
               font-weight: 500;
               line-height: 1.3;
             }
           }
-
-          
         }
         @media (max-width: 640px) {
           padding: 20px;
-          img {max-width: 100px;}
+          img {
+            max-width: 100px;
+          }
         }
       }
       p {
@@ -506,16 +542,17 @@
 
     @media (max-width: 1024px) {
       flex-direction: column-reverse;
-      
     }
 
     .left-side {
       flex: 1;
 
       @media (max-width: 1024px) {
-       width: 100%;
-        
-       img {width: 100%;}
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
       }
     }
 
@@ -527,8 +564,7 @@
 
       @media (max-width: 1024px) {
         width: 100%;
-         
-       }
+      }
 
       .intro-heading {
         p {
@@ -609,7 +645,6 @@
   }
 }
 
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -627,15 +662,15 @@
   background: white;
   border-radius: 8px;
   position: relative;
-  width: calc(80% + 200px); 
-  max-width: 1000px; 
-  min-width: 300px; 
-  transition: all 0.3s ease; 
+  width: calc(80% + 200px);
+  max-width: 1000px;
+  min-width: 300px;
+  transition: all 0.3s ease;
 }
 
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%; 
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -679,12 +714,12 @@
 
 @media (max-width: 768px) {
   .modal-content {
-    width: calc(70% + 100px); 
+    width: calc(70% + 100px);
   }
 }
 
 @media (max-width: 480px) {
   .modal-content {
-    width: calc(65% + 50px); 
+    width: calc(65% + 50px);
   }
 }
