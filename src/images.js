@@ -16,10 +16,10 @@ import webinarImg from './assets/images/webinar-img.png';
 import linkedInIcon from './assets/images/LinkedIn.svg';
 import closeIcon from './assets/images/closeIcon.svg';
 
-import innovationHeroImg from './assets/images/innovation-hero-img.png';
-import performanceHeroImg from './assets/images/performance-hero-img.png';
-import webinarHeroImg from './assets/images/webinar-hero-img.png';
-import aiHeroImg from './assets/images/ai-hero-img.png';
+import innovationHeroImg from './assets/images/Innovation-LP1.png';
+import performanceHeroImg from './assets/images/Performance-LP2.png';
+import webinarHeroImg from './assets/images/Talent-LP3.png';
+import aiHeroImg from './assets/images/AI-LP4.png';
 
 
 import performanceIcon1Svg from './assets/images/performance-icon-1.svg';

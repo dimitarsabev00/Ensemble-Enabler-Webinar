@@ -33,6 +33,7 @@ function InnovationScreen() {
   return (
     <>
       <div className="hero-container">
+        <div className="wrapper">
         <div className="hero-inner-container">
           <div className="text-content-wrap">
             <div className="text-content-inner">
@@ -56,11 +57,10 @@ function InnovationScreen() {
               </div>
             </div>
           </div>
-          <div className="image-wrapper innovation">
-            <div className="mobile-image">
-              <img src={images.innovationHeroImg} alt="Innovation Hero Image" />
-            </div>
+          <div className="image-wrapper">
+            <img src={images.innovationHeroImg} alt="Innovation Hero Image" />
           </div>
+        </div>
         </div>
       </div>
 

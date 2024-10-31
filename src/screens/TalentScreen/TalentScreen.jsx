@@ -32,34 +32,36 @@ const TalentScreen = () => {
   };
   return (
     <>
-      <div className="hero-container">
+<div className="hero-container">
+        <div className="wrapper">
         <div className="hero-inner-container">
           <div className="text-content-wrap">
-            <div className="text-content">
-              <h1>
-                Stronger people connections boost engagement and a sense of
-                belonging
-              </h1>
-              <p>
-                Network Leadership unleashes the potential of your organization.{" "}
-                <br />
-                <em>Leadership powered by Networks.</em>
-              </p>
-              <div className="cta-button-wrap">
-                <a className="cta-button" onClick={openModal}>
-                  <span className="icon">
-                    <img src={images.playIcon} alt="Play Button Icon" />
-                  </span>
-                  View our 30 second webinar trailer
-                </a>
+            <div className="text-content-inner">
+              <div className="text-content">
+                <h1>
+                Stronger people connections boost engagement and a 
+                sense of belonging
+                </h1>
+                <p>
+                  Network Leadership unleashes the potential of your
+                  organization. <br />
+                  <em>Leadership powered by Networks.</em>
+                </p>
+                <div className="cta-button-wrap">
+                  <a className="cta-button" onClick={openModal}>
+                    <span className="icon">
+                      <img src={images.playIcon} alt="Play Button Icon" />
+                    </span>
+                    View our 30 second webinar trailer
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <div className="image-wrapper webinar">
-            <div className="mobile-image">
-              <img src={images.webinarHeroImg} alt="Innovation Hero Image" />
-            </div>
+          <div className="image-wrapper">
+            <img src={images.webinarHeroImg} alt="Innovation Hero Image" />
           </div>
+        </div>
         </div>
       </div>
 

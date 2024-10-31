@@ -32,12 +32,13 @@ const PerformanceScreen = () => {
   return (
     <>
       <div className="hero-container">
-          <div className="hero-inner-container">
-            <div className="text-content-wrap">
+        <div className="wrapper">
+        <div className="hero-inner-container">
+          <div className="text-content-wrap">
+            <div className="text-content-inner">
               <div className="text-content">
                 <h1>
-                  Superior performance results from a fluid flow of information
-                  and energy across an organization
+                Superior performance results from a fluid flow of information and energy across an organization
                 </h1>
                 <p>
                   Network Leadership unleashes the potential of your
@@ -54,10 +55,12 @@ const PerformanceScreen = () => {
                 </div>
               </div>
             </div>
-            <div className="image-wrapper performance">
-              <img src={images.performanceHeroImg} alt="Innovation Hero Image" />
-            </div>
           </div>
+          <div className="image-wrapper">
+            <img src={images.performanceHeroImg} alt="Innovation Hero Image" />
+          </div>
+        </div>
+        </div>
       </div>
 
       {isModalOpen && (

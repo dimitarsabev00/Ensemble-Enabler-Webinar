@@ -1,43 +1,5 @@
 @import "../../base.scss";
 
-/*HERO SECTION*/
-.hero-container {
-  
-  .image-wrapper.webinar {
-    background-image: url("../../assets/images/webinar-hero-img.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 846px;
-    height: 700px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    top: 0;
-
-    .mobile-image {
-      display: none;
-    }
-
-    img {
-      display: block;
-    }
-
-    @media (max-width: 1440px) {
-      // display: none;
-      background-image: none;
-      height: auto;
-      position: unset;
-      margin-left: auto;
-      width: auto;
-      padding-left: 30px;
-
-      .mobile-image {
-        display: block;
-      }
-    }
-  }
-}
 .connections-section {
   .left-side.webinar {
     .quote-author {
