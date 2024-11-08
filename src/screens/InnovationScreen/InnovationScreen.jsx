@@ -30,37 +30,51 @@ function InnovationScreen() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+  const hotjar = document.createElement("script");
+  hotjar.type = "text/javascript";
+  hotjar.innerHTML = `
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:5191195,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  `;
+  document.head.appendChild(hotjar);
+
   return (
     <>
       <div className="hero-container">
         <div className="wrapper">
-        <div className="hero-inner-container">
-          <div className="text-content-wrap">
-            <div className="text-content-inner">
-              <div className="text-content">
-                <h1>
-                  Meaningful connections spark ideas for successful innovation
-                </h1>
-                <p>
-                  Network Leadership unleashes the potential of your
-                  organization. <br />
-                  <em>Leadership powered by Networks.</em>
-                </p>
-                <div className="cta-button-wrap">
-                  <a className="cta-button" onClick={openModal}>
-                    <span className="icon">
-                      <img src={images.playIcon} alt="Play Button Icon" />
-                    </span>
-                    View our 30 second webinar trailer
-                  </a>
+          <div className="hero-inner-container">
+            <div className="text-content-wrap">
+              <div className="text-content-inner">
+                <div className="text-content">
+                  <h1>
+                    Meaningful connections spark ideas for successful innovation
+                  </h1>
+                  <p>
+                    Network Leadership unleashes the potential of your
+                    organization. <br />
+                    <em>Leadership powered by Networks.</em>
+                  </p>
+                  <div className="cta-button-wrap">
+                    <a className="cta-button" onClick={openModal}>
+                      <span className="icon">
+                        <img src={images.playIcon} alt="Play Button Icon" />
+                      </span>
+                      View our 30 second webinar trailer
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
+            <div className="image-wrapper">
+              <img src={images.innovationHeroImg} alt="Innovation Hero Image" />
+            </div>
           </div>
-          <div className="image-wrapper">
-            <img src={images.innovationHeroImg} alt="Innovation Hero Image" />
-          </div>
-        </div>
         </div>
       </div>
 
@@ -176,56 +190,7 @@ function InnovationScreen() {
       <div className="centric-approach-section">
         <div className="wrapper">
           <div className="centric-approach-inner">
-            <div className="intro-heading">
-              <h2>
-                This network-centric approach shifts the focus to the key issues
-                that matter.
-              </h2>
-              {/* <button className="cta-button">
-                View Full Webinar
-                <span className="icon">
-                  <img src={images.arrowRight} alt="Arrow Right Icon" />
-                </span>
-              </button> */}
-            </div>
-            <div className="centric-approach-list">
-              <ul>
-                <li>
-                  <img
-                    src={images.connectionImg}
-                    alt="Centric Approach Image 1"
-                  />
-                  <h3>Connections</h3>
-                  <p>
-                    The way people are connected with each other shapes the
-                    organization’s effectiveness and success
-                  </p>
-                </li>
-                <li>
-                  <img
-                    src={images.flowOfInfoImg}
-                    alt="Centric Approach Image 2"
-                  />
-                  <h3>Flow of Information + Energy</h3>
-                  <p>
-                    The communication and transmission of ideas though networks
-                    serve as an organization’s unique lifeblood
-                  </p>
-                </li>
-                <li>
-                  <img
-                    src={images.advancingImg}
-                    alt="Centric Approach Image 3"
-                  />
-                  <h3>Advancing a Dynamic Organization</h3>
-                  <p>
-                    Networks harness collective creativity to drive growth and
-                    amplify organizational impact
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <div className="subscription-section">
+          <div className="subscription-section">
               <h3>
                 To learn more about expanding your leadership skills and
                 boosting your organization's performance, view our in-depth
@@ -355,6 +320,57 @@ function InnovationScreen() {
                 </div>
               </div>
             </div>
+            <div className="intro-heading">
+              <h2>
+                This network-centric approach shifts the focus to the key issues
+                that matter.
+              </h2>
+              {/* <button className="cta-button">
+                View Full Webinar
+                <span className="icon">
+                  <img src={images.arrowRight} alt="Arrow Right Icon" />
+                </span>
+              </button> */}
+            </div>
+            
+            <div className="centric-approach-list">
+              <ul>
+                <li>
+                  <img
+                    src={images.connectionImg}
+                    alt="Centric Approach Image 1"
+                  />
+                  <h3>Connections</h3>
+                  <p>
+                    The way people are connected with each other shapes the
+                    organization’s effectiveness and success
+                  </p>
+                </li>
+                <li>
+                  <img
+                    src={images.flowOfInfoImg}
+                    alt="Centric Approach Image 2"
+                  />
+                  <h3>Flow of Information + Energy</h3>
+                  <p>
+                    The communication and transmission of ideas though networks
+                    serve as an organization’s unique lifeblood
+                  </p>
+                </li>
+                <li>
+                  <img
+                    src={images.advancingImg}
+                    alt="Centric Approach Image 3"
+                  />
+                  <h3>Advancing a Dynamic Organization</h3>
+                  <p>
+                    Networks harness collective creativity to drive growth and
+                    amplify organizational impact
+                  </p>
+                </li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </div>
